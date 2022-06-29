@@ -1,3 +1,4 @@
+/*
 const eqArrays = function(array1, array2) {
   let result = false;
   if (Array.isArray(array1) && Array.isArray(array2)) {
@@ -9,6 +10,7 @@ const eqArrays = function(array1, array2) {
   }
   return result;
 };
+*/
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
