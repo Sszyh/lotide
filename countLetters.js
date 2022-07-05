@@ -21,8 +21,10 @@ const countLetters = function(inputString) {
   return outputObject;
 };
 //console.log(outputObject);
-const result = countLetters("lll Hi");
-assertEqual(result.l, 3);
-assertEqual(result.H, 1);
-assertEqual(result.i, 1);
-assertEqual(result[" "], undefined);
+//const result = countLetters("lll Hi");
+//assertEqual(result.l, 3);
+//assertEqual(result.H, 1);
+//assertEqual(result.i, 1);
+//assertEqual(result[" "], undefined);
+
+module.exports = countLetters;

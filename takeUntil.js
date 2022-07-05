@@ -10,13 +10,13 @@ const takeUntil = function(array, callback) {
   return result;
 }
 const results1 = takeUntil(data1, (x) => {return x < 0});
-console.log(results1);
+//console.log(results1);
 
-console.log('---');
+//console.log('---');
 
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
-console.log(results2);
+//console.log(results2);
 
 const eqArrays = function(array1, array2) {
   if (Array.isArray(array1) && Array.isArray(array2)) {
@@ -41,5 +41,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ]);
-assertArraysEqual(results2,[ "I've", 'been', 'to', 'Hollywood' ]);
+//assertArraysEqual(results1,[ 1, 2, 5, 7, 2 ]);
+//assertArraysEqual(results2,[ "I've", 'been', 'to', 'Hollywood' ]);
+
+module.exports = takeUntil;

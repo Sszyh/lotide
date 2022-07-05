@@ -1,4 +1,5 @@
-const letterPosition = function(sentence) {
+
+const letterPositions = function(sentence) {
   const results = {};
 
   for (let i = 0; i < sentence.length; i++) {
@@ -37,7 +38,9 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-assertArraysEqual(letterPosition("hello")["h"], [0]);
-assertArraysEqual(letterPosition("hello")["e"], [1]);
-assertArraysEqual(letterPosition("hello")["l"], [2,3]);
-assertArraysEqual(letterPosition("hello")["o"], [4]); 
+//assertArraysEqual(letterPosition("hello")["h"], [0]);
+//assertArraysEqual(letterPosition("hello")["e"], [1]);
+//assertArraysEqual(letterPosition("hello")["l"], [2,3]);
+//assertArraysEqual(letterPosition("hello")["o"], [4]); 
+
+module.exports = letterPositions;

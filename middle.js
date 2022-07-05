@@ -40,6 +40,6 @@ const middle = function(middleInput) {
 
 //assertArraysEqual(middle([2,4,5,4,3]), [5]);
 
-module.exports = middle
+module.exports = middle;
 
 
