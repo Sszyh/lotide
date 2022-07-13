@@ -16,7 +16,7 @@
 const head = function(array) {
   let output;
   if (array === []) {
-    output =  undefined;
+    output = undefined;
   } else {
     output = array[0];
   }
@@ -27,3 +27,4 @@ const head = function(array) {
 //assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
 module.exports = head;
+
