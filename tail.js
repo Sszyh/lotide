@@ -7,6 +7,12 @@
 //};
 
 const tail = function(array) {
+  if (array === []) {
+    return [];
+  }
+  if (array.length === 1) {
+    return array;
+  }
   let newArray = [...array];
   newArray.shift();
   return newArray;
