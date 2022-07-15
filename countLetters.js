@@ -12,7 +12,6 @@ const countLetters = function(inputString) {
     if (letter !== " ") {
       if (outputObject[letter]) {
         outputObject[letter] += 1;
-        console.log(outputObject);
       } else {
         outputObject[letter] = 1;
       }
