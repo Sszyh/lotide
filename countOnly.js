@@ -6,22 +6,22 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countOnly = function(allItems, itemsToCount) {
-  const results = {};
-  for (const item of allItems) {
-    if (item in itemsToCount && itemsToCount[item] === true) {
-      // or if(itemsToCount[item] && itemsToCount[item] === true) {
-      if (results[item]) {
-        results[item] += 1;
-      } else {
-        results[item] = 1;
-      }
-    }
-  }
-  return results;
-};
+// const countOnly = function(allItems, itemsToCount) {
+//   const results = {};
+//   for (const item of allItems) {
+//     if (item in itemsToCount && itemsToCount[item] === true) {
+//       // or if(itemsToCount[item] && itemsToCount[item] === true) {
+//       if (results[item]) {
+//         results[item] += 1;
+//       } else {
+//         results[item] = 1;
+//       }
+//     }
+//   }
+//   return results;
+// };
 
-//const firstNames = [
+// const firstNames = [
 //  "Karl",
 //  "Salima",
 //  "Agouhanna",
@@ -31,7 +31,7 @@ const countOnly = function(allItems, itemsToCount) {
 //  "Salima",
 //  "Fang",
 //  "Joe"
-//];
+// ];
 
 //const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });//
 
@@ -39,5 +39,30 @@ const countOnly = function(allItems, itemsToCount) {
 //assertEqual(result1["Karima"], undefined);
 //assertEqual(result1["Fang"], 2);
 //assertEqual(result1["Agouhanna"], undefined);
+const countOnly = (allItems, itemsToCount) => {
+  const results = {};
+  for (const item of allItems) {
+    for (let name in itemsToCount) {
+      if (itemsToCount[name]) {
+        if (name === item) {
+          if (results[item]) {
+            results[item] += 1
+          } else {
+            results[item] = 1
+          }
+        }
+      }
+    }
+  }
+  return results;
+}
+
+// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });//
+
+// assertEqual(result1["Jason"], 1);
+// assertEqual(result1["Karima"], undefined);
+// assertEqual(result1["Fang"], 2);
+// assertEqual(result1["Agouhanna"], undefined);
+
 
 module.exports = countOnly;
