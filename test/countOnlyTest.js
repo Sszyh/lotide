@@ -2,7 +2,7 @@ const assert = require("chai").assert;
 const countOnly = require("../countOnly");
 
 describe("#countOnly", () => {
-  it("return [1,2,3,4,5,6] for [1, 2, [3, 4], 5, [6]]", () => {
+  it("return 1 for 'Jason'", () => {
     const firstNames = [
       "Karl",
       "Salima",
