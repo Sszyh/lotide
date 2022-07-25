@@ -26,10 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `head(array)`: description
-* `function2(...)`: description
-* `function3(...)`: description
-
 * `head(array)`: return the first element
 * `tail(array)`: return the elements except the first one
 * `middle(array)`: return the middle element/or middle two elements
